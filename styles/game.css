@@ -2,13 +2,19 @@
   width: 50rem;
   height: 50rem;
   border-radius: 15px;
-  border: double 4px #ff4400;
+  
   margin: 4rem;
   display: flex;
   flex-direction: column;
   align-items: center;  
+  background: linear-gradient(135deg, #2c3e50, #4ca1af);
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
 }
 
+.container:hover {
+  transform: translateY(-10px); 
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); 
+}
 .shift {
   width: 100%;
   height: 40%;  
@@ -20,7 +26,8 @@
 .shift > .container-cpu {
   width: 50%;
   height: 100%;
-  background-color: #043d7e;  
+  background-color: #4ca1af;  
+ 
 }
 
 .shift > .container-user {
